@@ -9,21 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
-        this.foodList = [];
+var NavComponent = (function () {
+    function NavComponent() {
     }
-    AppComponent.prototype.addEntry = function (newEntry) {
-        this.foodList.push(newEntry);
-    };
-    AppComponent = __decorate([
+    NavComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: "\n  <div class=\"container\">\n    <div class=\"jumbotron\">\n      <h1>meal tracker</h1>\n    </div>\n    <div class =\"container\">\n      <div class=\"row\">\n\n        <div class=\"col-md-4\"><navi></navi></div>\n        <div class=\"col-md-8\"><new-entry(newTaskSender)=\"addEntry($event)\"></new-entry></div>\n      </div>\n\n\n\n    </div>\n\n  </div>\n  "
+            selector: 'navi',
+            template: "\n  <div>\n    <h3 class=\"nav\"><button class=\"btn btn-primary\" (click)=\"editButtonHasBeenClicked(currentTask)\">new entry</button></h3>\n    <h3 class=\"nav\"><button class=\"btn\">Entry List</button></h3>\n\n  </div>\n\n  "
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], NavComponent);
+    return NavComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.NavComponent = NavComponent;
+//# sourceMappingURL=nav.component.js.map
