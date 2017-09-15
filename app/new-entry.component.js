@@ -25,7 +25,7 @@ var NewEntryComponent = (function () {
     NewEntryComponent = __decorate([
         core_1.Component({
             selector: 'new-entry',
-            template: "\n<div class='form-group'>\n<label class=\"form-control-label\" for=\"formGroupExampleInput\" >Name</label>\n  <input type=\"text\" class=\"form-control\" id=\"formGroupExampleInput\" placeholder=\"food\" #newName>\n\n  <label class=\"form-control-label\" for=\"formGroupExampleInput\" >Details</label>\n    <input type=\"text\" class=\"form-control\" id=\"formGroupExampleInput\" placeholder=\"details\" #newDetail>\n\n    <label class=\"form-control-label\" for=\"formGroupExampleInput\" >Calories</label>\n      <input type=\"text\" class=\"form-control\" id=\"formGroupExampleInput\" placeholder=\"\" #newCal>\n<button class=\"btn\" (click)='doneClicked(newName.value,newDetail.value,newCal.value)'>done</button\n</div>\n\n\n  "
+            template: "\n<div class='form-group'>\n<label class=\"form-control-label\" for=\"formGroupExampleInput\" >Name</label>\n  <input type=\"text\" class=\"form-control\" id=\"formGroupExampleInput\" placeholder=\"food\" #newName>\n\n  <label class=\"form-control-label\" for=\"formGroupExampleInput\" >Details</label>\n    <input type=\"text\" class=\"form-control\" id=\"formGroupExampleInput\" placeholder=\"details\" #newDetail>\n\n    <label class=\"form-control-label\" for=\"formGroupExampleInput\" >Calories</label>\n      <input type=\"text\" class=\"form-control\" id=\"formGroupExampleInput\" placeholder=\"\" #newCal>\n<button class=\"btn\" (click)='doneClicked(newName.value,newDetail.value,newCal.value)'>done</button>\n</div>\n\n\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], NewEntryComponent);

@@ -12,7 +12,7 @@ import { Food } from './food.model'
 
     <label class="form-control-label" for="formGroupExampleInput" >Calories</label>
       <input type="text" class="form-control" id="formGroupExampleInput" placeholder="" #newCal>
-<button class="btn" (click)='doneClicked(newName.value,newDetail.value,newCal.value)'>done</button
+<button class="btn" (click)='doneClicked(newName.value,newDetail.value,newCal.value)'>done</button>
 </div>
 
 

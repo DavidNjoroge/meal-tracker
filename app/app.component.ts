@@ -11,7 +11,11 @@ import { Food } from './food.model'
       <div class="row">
 
         <div class="col-md-4"><navi></navi></div>
-        <div class="col-md-8"><new-entry(newTaskSender)="addEntry($event)"></new-entry></div>
+        <div class="col-md-8">
+        <new-entry
+        (newTaskSender)="addEntry($event)"
+        ></new-entry>
+        </div>
       </div>
 
 
@@ -23,9 +27,14 @@ import { Food } from './food.model'
 })
 
 export class AppComponent {
-  public foodList: Food[] = []
-  addEntry(newEntry: Food) {
-    this.foodList.push(newEntry)
-  }
+  public foods: Food[] = [
+    new Food("Ugali", "Create To-Do List app.", 10),
+    new Food("chapo", "Create To-Do List app.", 20),
+    new Food("fried chicken", "Create To-Do List app.", 40),
+    new Food("salad", "Create To-Do List app.", 0),
+    new Food("fries", "Create To-Do List app.", 0),
+    new Food("salad", "Create To-Do List app.", 0),
+    new Food("ugali", "Create To-Do List app.", 0),
 
+  ]
 }
