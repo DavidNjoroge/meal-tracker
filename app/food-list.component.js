@@ -9,23 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var app_component_1 = require('./app.component');
-var nav_component_1 = require('./nav.component');
-var new_entry_component_1 = require('./new-entry.component');
-var food_list_component_1 = require('./food-list.component');
-var AppModule = (function () {
-    function AppModule() {
+var FoodListComponent = (function () {
+    function FoodListComponent() {
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            declarations: [app_component_1.AppComponent, nav_component_1.NavComponent, new_entry_component_1.NewEntryComponent, food_list_component_1.FoodListComponent],
-            bootstrap: [app_component_1.AppComponent]
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Array)
+    ], FoodListComponent.prototype, "childEntryList", void 0);
+    FoodListComponent = __decorate([
+        core_1.Component({
+            selector: 'food-list',
+            template: "\n<h1>am alive.... </h1>\n\n<div *ngFor=\"let currentEntry of foods\">\n  <h3>{{ currentEntry.name }}</h3>\n  <button class=\"btn btn-primary btn-sm\" (click)=\"editButtonHasBeenClicked(currentTask)\">Edit</button>\n</div>\n\n\n\n  "
         }), 
         __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
+    ], FoodListComponent);
+    return FoodListComponent;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+exports.FoodListComponent = FoodListComponent;
+//# sourceMappingURL=food-list.component.js.map

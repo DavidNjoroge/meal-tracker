@@ -10,11 +10,15 @@ import { Food } from './food.model'
     <div class ="container">
       <div class="row">
 
-        <div class="col-md-4"><navi></navi></div>
-        <div class="col-md-8">
+        <div class="col-md-4">
+        <navi></navi>
         <new-entry
         (newTaskSender)="addEntry($event)"
         ></new-entry>
+        </div>
+        <div class="col-md-8">
+
+<food-list></food-list>
         </div>
       </div>
 
@@ -37,4 +41,5 @@ export class AppComponent {
     new Food("ugali", "Create To-Do List app.", 0),
 
   ]
+
 }
