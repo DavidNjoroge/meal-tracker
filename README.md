@@ -30,4 +30,4 @@ the website uses Angular2 for client side interactions where you can add new ent
 
 *MIT*
 
-Copyright (c) 2017 **github-browser**
+Copyright (c) 2017 **Meal Tracker**

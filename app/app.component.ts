@@ -18,7 +18,9 @@ import { Food } from './food.model'
         </div>
         <div class="col-md-8">
 
-<food-list></food-list>
+<food-list
+[childEntryList]="foods"
+></food-list>
         </div>
       </div>
 

@@ -25,7 +25,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n  <div class=\"container\">\n    <div class=\"jumbotron\">\n      <h1>meal tracker</h1>\n    </div>\n    <div class =\"container\">\n      <div class=\"row\">\n\n        <div class=\"col-md-4\">\n        <navi></navi>\n        <new-entry\n        (newTaskSender)=\"addEntry($event)\"\n        ></new-entry>\n        </div>\n        <div class=\"col-md-8\">\n\n<food-list></food-list>\n        </div>\n      </div>\n\n\n\n    </div>\n\n  </div>\n  "
+            template: "\n  <div class=\"container\">\n    <div class=\"jumbotron\">\n      <h1>meal tracker</h1>\n    </div>\n    <div class =\"container\">\n      <div class=\"row\">\n\n        <div class=\"col-md-4\">\n        <navi></navi>\n        <new-entry\n        (newTaskSender)=\"addEntry($event)\"\n        ></new-entry>\n        </div>\n        <div class=\"col-md-8\">\n\n<food-list\n[childEntryList]=\"foods\"\n></food-list>\n        </div>\n      </div>\n\n\n\n    </div>\n\n  </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

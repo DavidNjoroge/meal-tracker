@@ -3,7 +3,7 @@ import { Food } from './food.model'
 @Component({
   selector: 'new-entry',
   template: `
-<div class='form-group'>
+<div class='form-group h3'>
 <label class="form-control-label" for="formGroupExampleInput" >Name</label>
   <input type="text" class="form-control" id="formGroupExampleInput" placeholder="food" #newName>
 

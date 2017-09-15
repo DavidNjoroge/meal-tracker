@@ -15,7 +15,7 @@ var NavComponent = (function () {
     NavComponent = __decorate([
         core_1.Component({
             selector: 'navi',
-            template: "\n  <div>\n    <h3 class=\"nav\"><button class=\"btn btn-primary\" (click)=\"editButtonHasBeenClicked(currentTask)\">new entry</button></h3>\n    <h3 class=\"nav\"><button class=\"btn\">Entry List</button></h3>\n\n  </div>\n\n  "
+            template: "\n  <div>\n    <h3 class=\"nav\"><button class=\"btn bntB btn-primary\" (click)=\"editButtonHasBeenClicked(currentTask)\">new entry</button></h3>\n    <h3 class=\"nav\"><button class=\"btn bntB\">Entry List</button></h3>\n\n  </div>\n\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], NavComponent);

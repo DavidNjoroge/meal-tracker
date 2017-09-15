@@ -11,3 +11,13 @@ h3 {
 button {
   float: right;
 }
+
+.h3 {
+  padding: 10px;
+  border: 1px dashed black;
+}
+
+.bntB {
+  padding: 10px;
+  border: 1px dashed black;
+}
