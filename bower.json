@@ -1,0 +1,21 @@
+{
+  "name": "angular2-setup",
+  "authors": [
+    "njorogedavid13@gmail.com <njorogedavid13@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.6",
+    "jquery": "^3.2.1"
+  }
+}
