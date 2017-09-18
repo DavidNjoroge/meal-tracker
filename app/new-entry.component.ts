@@ -4,15 +4,15 @@ import { Food } from './food.model'
   selector: 'new-entry',
   template: `
 <div class='form-group h3'>
-<label class="form-control-label" for="formGroupExampleInput" >Name</label>
+  <label class="form-control-label" for="formGroupExampleInput" >Name</label>
   <input type="text" class="form-control" id="formGroupExampleInput" placeholder="food" #newName>
 
   <label class="form-control-label" for="formGroupExampleInput" >Details</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="details" #newDetail>
+  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="details" #newDetail>
 
-    <label class="form-control-label" for="formGroupExampleInput" >Calories</label>
-      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="" #newCal>
-<button class="btn" (click)='doneClicked(newName.value,newDetail.value,newCal.value)'>done</button>
+  <label class="form-control-label" for="formGroupExampleInput" >Calories</label>
+  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="" #newCal>
+  <button class="btn" (click)='doneClicked(newName.value,newDetail.value,newCal.value)'>done</button>
 </div>
 
 

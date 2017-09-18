@@ -6,9 +6,9 @@ import { Food } from './food.model'
   template: `
 
 <div class="h3" *ngFor="let currentEntry of childEntryList">
-  <div>{{ currentEntry.name }} {{ currentEntry.name }} {{ currentEntry.name }}<button class="btn btn-primary btn-sm" (click)="editButtonHasBeenClicked(currentTask)">Edit</button>
-</div>
+  <div>{{ currentEntry.name }} {{ currentEntry.details }}{{ currentEntry.calories }}<button class="btn btn-primary btn-sm" (click)="editButtonHasBeenClicked(currentTask)">Edit</button>
   </div>
+</div>
 
 
 
@@ -17,6 +17,7 @@ import { Food } from './food.model'
 
 export class FoodListComponent {
   @Input() childEntryList: Food[]
+
 
 
 

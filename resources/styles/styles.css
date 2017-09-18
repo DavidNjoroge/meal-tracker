@@ -21,3 +21,7 @@ button {
   padding: 10px;
   border: 1px dashed black;
 }
+
+.size {
+  width: 10px;
+}
