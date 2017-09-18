@@ -9,23 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var food_model_1 = require('./food.model');
 var AppComponent = (function () {
     function AppComponent() {
-        this.foods = [
-            new food_model_1.Food("Ugali", "Create To-Do List app.", 10),
-            new food_model_1.Food("chapo", "Create To-Do List app.", 20),
-            new food_model_1.Food("fried chicken", "Create To-Do List app.", 40),
-            new food_model_1.Food("salad", "Create To-Do List app.", 0),
-            new food_model_1.Food("fries", "Create To-Do List app.", 0),
-            new food_model_1.Food("salad", "Create To-Do List app.", 0),
-            new food_model_1.Food("ugali", "Create To-Do List app.", 0),
-        ];
+        this.foods = [];
     }
+    AppComponent.prototype.addEntry = function (newEntryFromChild) {
+        this.foods.push(newEntryFromChild);
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n  <div class=\"container\">\n    <div class=\"jumbotron\">\n      <h1>meal tracker</h1>\n    </div>\n    <div class =\"container\">\n      <div class=\"row\">\n\n        <div class=\"col-md-4\">\n        <navi></navi>\n        <new-entry\n        (newTaskSender)=\"addEntry($event)\"\n        ></new-entry>\n        </div>\n        <div class=\"col-md-8\">\n\n<food-list\n[childEntryList]=\"foods\"\n></food-list>\n        </div>\n      </div>\n\n\n\n    </div>\n\n  </div>\n  "
+            template: "\n  <div class=\"container\">\n    <div class=\"jumbotron\">\n      <h1>meal tracker</h1>\n    </div>\n    <div class =\"container\">\n      <div class=\"row\">\n\n        <div class=\"col-md-4\">\n        <navi></navi>\n        <new-entry\n        (newTaskSender)=\"addEntry($event)\"\n        ></new-entry>\n        </div>\n        <div class=\"col-md-8\">\n\n          <food-list\n          [childEntryList]=\"foods\"\n          ></food-list>\n        </div>\n      </div>\n\n\n\n    </div>\n  </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

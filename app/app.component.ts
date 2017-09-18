@@ -32,15 +32,9 @@ import { Food } from './food.model'
 })
 
 export class AppComponent {
-  public foods: Food[] = [
-    new Food("Ugali", "Create To-Do List app.", 10),
-    new Food("chapo", "Create To-Do List app.", 20),
-    new Food("fried chicken", "Create To-Do List app.", 40),
-    new Food("salad", "Create To-Do List app.", 0),
-    new Food("fries", "Create To-Do List app.", 0),
-    new Food("salad", "Create To-Do List app.", 0),
-    new Food("ugali", "Create To-Do List app.", 0),
-
-  ]
+  public foods: Food[] = []
+  addEntry(newEntryFromChild: Food) {
+    this.foods.push(newEntryFromChild)
+  }
 
 }
